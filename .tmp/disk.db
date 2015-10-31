@@ -1,0 +1,196 @@
+{
+  "data": {
+    "birthday": [
+      {
+        "nev": "asd",
+        "datum": "2015-03-04T00:00:00.000Z",
+        "user": 1,
+        "createdAt": "2015-10-15T13:42:24.422Z",
+        "updatedAt": "2015-10-15T13:42:24.422Z",
+        "id": 2
+      }
+    ],
+    "recipe": [
+      {
+        "etel": "Almás pite",
+        "hozzavalo": "alma, liszt...",
+        "user": 6,
+        "felhasznalonev": "Karcsi bácsi",
+        "createdAt": "2015-10-31T12:14:58.208Z",
+        "updatedAt": "2015-10-31T12:14:58.208Z",
+        "id": 9
+      }
+    ],
+    "user": [
+      {
+        "surname": "Városi",
+        "forename": "Bence",
+        "neptun": "PLEWNA",
+        "password": "asd",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-10-15T13:29:13.731Z",
+        "updatedAt": "2015-10-15T13:29:13.731Z",
+        "id": 1
+      },
+      {
+        "surname": "asd",
+        "forename": "asd",
+        "neptun": "asd",
+        "password": "$2a$10$ctFsxCRGh3D2cYS/IRJ.9O70kPljlGhKTULnThZ6LfqQWf5W3UxH.",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-10-29T12:00:37.995Z",
+        "updatedAt": "2015-10-29T12:00:37.995Z",
+        "id": 2
+      },
+      {
+        "surname": "asd2",
+        "forename": "asd2",
+        "neptun": "asd2",
+        "password": "$2a$10$.66JwyaYeIwEL8o.8vK/duaLaesvcLdqVYSJCGwaJ8gg.3YjNEWlG",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-10-29T12:55:58.735Z",
+        "updatedAt": "2015-10-29T12:55:58.735Z",
+        "id": 3
+      },
+      {
+        "surname": "asd3",
+        "forename": "asd3",
+        "azon": "asd3",
+        "password": "$2a$10$H3uP/JrUJjDadW5QqszM5esBkYlhHTU0JVH8S7LLTIFLR6J/TiKP6",
+        "role": "riporter",
+        "createdAt": "2015-10-29T13:52:54.794Z",
+        "updatedAt": "2015-10-29T13:52:54.794Z",
+        "id": 4
+      },
+      {
+        "surname": "asd",
+        "forename": "asd",
+        "azon": "asd",
+        "password": "$2a$10$mics4PrFYycachgwtTErae.gZEmnIxj9YfsZcMNLlZNh85j3zV3Ym",
+        "role": "riporter",
+        "createdAt": "2015-10-29T13:53:44.181Z",
+        "updatedAt": "2015-10-29T13:53:44.181Z",
+        "id": 5
+      },
+      {
+        "surname": "Karcsi",
+        "forename": "bácsi",
+        "azon": "karcsi",
+        "password": "$2a$10$CLqGRtwONA7eVGmjNIhXnOh2jInkj46Rl5AWTY4Ddxw3kT4N99p6y",
+        "role": "riporter",
+        "createdAt": "2015-10-31T12:14:38.572Z",
+        "updatedAt": "2015-10-31T12:14:38.572Z",
+        "id": 6
+      }
+    ]
+  },
+  "schema": {
+    "birthday": {
+      "nev": {
+        "type": "string"
+      },
+      "datum": {
+        "type": "date"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "recipe": {
+      "etel": {
+        "type": "string"
+      },
+      "hozzavalo": {
+        "type": "string"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "felhasznalonev": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "azon": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "surname": {
+        "type": "string"
+      },
+      "forename": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "riporter",
+          "operator"
+        ],
+        "defaultsTo": "riporter"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "birthday": {
+      "id": 3
+    },
+    "user": {
+      "id": 6
+    },
+    "recipe": {
+      "id": 9
+    }
+  }
+}
