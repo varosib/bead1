@@ -192,10 +192,6 @@ router.use('/edit/:id', ensureAuthenticated, function (req, res) {
 });    
     
 router.use('/delete/:id', ensureAuthenticated, function (req, res) {
-        /*req.session.data = req.session.data || [];
-        req.session.data = req.session.data.filter(function (elem) {
-            return elem.id != req.params.id;
-        });*/
         req.app.Models.recipe.destroy({ id: req.params.id })
         .then(function () {
             req.flash('success', 'Recept törölve');
