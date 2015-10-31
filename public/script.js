@@ -1,6 +1,6 @@
-//console.log('debug');
+console.log('debug');
 
-var tables = [];
+/*var tables = [];
 for (var i = 1; i <= 12; ++i) {
     tables[i] = $('<table class="table table-striped"><caption>' +
                    i +
@@ -35,4 +35,4 @@ tables.forEach(function(table) {
     $('body').append(table);
 });
 
-console.log(tables);
+console.log(tables);*/
