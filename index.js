@@ -117,7 +117,7 @@ orm.loadCollection(require('./models/recipe'));
 orm.loadCollection(require('./models/user'));
 
 orm.initialize(ormConfig, function (err, models) {
-    if (err) throw err;
+    if (err) return err;
     
     app.Models = models.collections;
     
