@@ -3,6 +3,7 @@ var bcrypt = require('bcryptjs');
 
 module.exports = Waterline.Collection.extend({
     identity: 'user',
+    migrate: 'safe',
     connection: 'disk',
     attributes: {
         azon: {
