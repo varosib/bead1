@@ -119,7 +119,7 @@ orm.loadCollection(require('./models/user'));
 orm.initialize(ormConfig, function (err, models) {
     //if (err) throw err;
     
-    //app.Models = models.collections;
+    app.Models = models.collections;
     
     var port = process.env.PORT || 1337;
     app.listen(port, function () {
