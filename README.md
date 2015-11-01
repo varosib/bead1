@@ -4,7 +4,7 @@
 ######A feladat egy olyan alkalmazás programozása, amely recepteket tárol és listáz ki. Recepteket lehessen hozzáadni, szerkeszteni, törölni, de ezeket csak bejelentkezett felhasználók tehetik meg. Ezzel szemben a recepteket bármelyik vendig elolvashatja. Lehetőség van keresni is a receptek között, valamint regisztálni új felhasználói fiókot.
 ####Használatieset-modell
 ######Szerepkörök: vendég, felhasználó
-######![Szerepkör-modell](docs/images/szerepkor.png)
+######![szerepkor](https://cloud.githubusercontent.com/assets/14218102/10869402/fc82e4a8-80ae-11e5-937c-e29ffaaf5ec5.png)
 ######Folyamat ismertetés: Vendék érkezik az oldalra, szeretne felvenni egy receptet. Ehhez először a bejelentkezés fülre kattint, majd a regisztrálásra. Miután megadta az adatait és belépett, egyből az új recept hozzáadás menüpont alatt találja magát. Itt felveszi az adatokat, majd átvált a receptek fülre, ahol szemrevételezheti, hogy felkerült a recept.
 ###Tervezés
 ###Implementáció
