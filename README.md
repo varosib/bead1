@@ -36,6 +36,18 @@
 ####Oldalterv
 ![oldalterv](https://cloud.githubusercontent.com/assets/14218102/10869485/bb7ec884-80b1-11e5-92e8-92de90b0b4c7.png)
 ####Adatmodell
+![adatmodell](https://cloud.githubusercontent.com/assets/14218102/10869521/b62507ee-80b2-11e5-9098-373e4b299629.png)
+######User
++ azon: felhasználónév
++ password: jelszó
++ surename + forename: név
++ recipes: userhez tartozó receptek
+ 
+######Recipe
++ etel: étel neve
++ hozzavalo: hozzávalók
++ user: recepthez tartozó user
++ felhasznalonev: felhasználó összefűzött neve
 
 ###Implementáció
 ####Fejlesztői környezet
