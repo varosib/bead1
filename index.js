@@ -116,8 +116,8 @@ app.use(router);
 orm.loadCollection(require('./models/recipe'));
 orm.loadCollection(require('./models/user'));
 
-/*orm.initialize(ormConfig, function (err, models) {
-    if (err) throw err;
+orm.initialize(ormConfig, function (err, models) {
+    //if (err) throw err;
     
     app.Models = models.collections;
     
@@ -125,4 +125,4 @@ orm.loadCollection(require('./models/user'));
     app.listen(port, function () {
         console.log('App server started on port ' + port);
     });
-});*/
+});
