@@ -7,6 +7,34 @@
 ######![szerepkor](https://cloud.githubusercontent.com/assets/14218102/10869402/fc82e4a8-80ae-11e5-937c-e29ffaaf5ec5.png)
 ######Folyamat ismertetés: Vendék érkezik az oldalra, szeretne felvenni egy receptet. Ehhez először a bejelentkezés fülre kattint, majd a regisztrálásra. Miután megadta az adatait és belépett, egyből az új recept hozzáadás menüpont alatt találja magát. Itt felveszi az adatokat, majd átvált a receptek fülre, ahol szemrevételezheti, hogy felkerült a recept.
 ###Tervezés
+####Architektúra
+#####Oldaltérkép:
+######Public:
++ Főoldal
++ Receptek
++ Bejelentkezés
++ Regisztráció
+
+######Private:
++ Új recept
++ Recept szerkesztés
+
+#####Végpontok:
++ GET /: főoldal
++ GET /auth/login: bejelentekzési oldal
++ POST /auth/login: bejelentkező adatok küldése
++ GET /auth/signup: regisztrációs oldal
++ POST /auth/signup: regisztrációs adatok küldése
++ GET /list: receptek listázása
++ GET /add: recept felvételi oldal
++ POST /add: új recept adatainak küldése
++ GET /delete:id : recept törlése
++ GET /edit:id : recept módosító oldal
++ POST /edit : modosítot adatok küldése
++ GET /auth/logout: kijelentkezés
+
+####Oldalterv:
+
 ###Implementáció
 ####Fejlesztői környezet
 ######Cloud9
