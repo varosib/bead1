@@ -33,7 +33,9 @@
 + POST /edit : modosítot adatok küldése
 + GET /auth/logout: kijelentkezés
 
-####Oldalterv:
+####Oldalterv
+![oldalterv](https://cloud.githubusercontent.com/assets/14218102/10869485/bb7ec884-80b1-11e5-92e8-92de90b0b4c7.png)
+####Adatmodell
 
 ###Implementáció
 ####Fejlesztői környezet
