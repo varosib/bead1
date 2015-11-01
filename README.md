@@ -16,3 +16,9 @@
 ######views: oldalak megjelenéséért felelős hbs fileok
 ###Tesztelés
 ###Felhasználói dokumentáció
+####Futtatás
+######Futtatáshoz szükségünk van egy keretrendszerre, pl. Cloud9.
+####Telepítés
+######Miután leszedtük a projectet a githubról, importálni kell a keretrendszerbe. Ezután a module csomagok feltelepítése után (npm install) használhatjuk/fejleszthetjük a programot.
+####Program használata
+######A főkönyvtárból futtatható a program a "node index.js" paranccsal.
