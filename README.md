@@ -11,10 +11,9 @@
 ####Fejlesztői környezet
 ######Cloud9
 ####Mappaszerkezet
-######bead1 főkönyvtár: ez tartalmazza az alkalamzás működéséért felelős js fileokat és az alkönyvtárakat
-######models: user és recipe modellek
-######views: oldalak megjelenéséért felelős hbs fileok
-###Tesztelés
+######*bead1 főkönyvtár: ez tartalmazza az alkalamzás működéséért felelős js fileokat és az alkönyvtárakat
+######*models: user és recipe modellek
+######*views: oldalak megjelenéséért felelős hbs fileok
 ###Felhasználói dokumentáció
 ####Futtatás
 ######Futtatáshoz szükségünk van egy keretrendszerre, pl. Cloud9.
