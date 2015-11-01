@@ -8,5 +8,11 @@
 ######Folyamat ismertetés: Vendék érkezik az oldalra, szeretne felvenni egy receptet. Ehhez először a bejelentkezés fülre kattint, majd a regisztrálásra. Miután megadta az adatait és belépett, egyből az új recept hozzáadás menüpont alatt találja magát. Itt felveszi az adatokat, majd átvált a receptek fülre, ahol szemrevételezheti, hogy felkerült a recept.
 ###Tervezés
 ###Implementáció
+####Fejlesztői környezet
+######Cloud9
+####Mappaszerkezet
+######bead1 főkönyvtár: ez tartalmazza az alkalamzás működéséért felelős js fileokat és az alkönyvtárakat
+######models: user és recipe modellek
+######views: oldalak megjelenéséért felelős hbs fileok
 ###Tesztelés
 ###Felhasználói dokumentáció
